@@ -1,0 +1,100 @@
+footer{
+    background-color: var(--xiketic);
+    color: var(--lavender_web);
+
+    padding: 3vh 8vw;
+}
+
+footer a{
+    color: var(--lavender_web);
+    text-decoration: none;
+}
+
+#slogan_footer{
+    width: 100%;
+
+    display: inline-flex;
+    justify-content: center;
+
+    cursor: context-menu;
+}
+#slogan_footer > *{
+    display: block;
+    font-family: 'Graffiti';
+    font-size: 6vw;
+    padding: 0px 2px;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer > .start > .follow, .copyright{
+    margin: 15px 0px;
+}
+
+.start > .follow > h3{
+    font-size: 130%;
+    margin-bottom: 10px;
+}
+
+.follow > .social_media{
+    display: flex;
+    flex-direction: column;
+}
+
+.follow > .social_media span{
+    padding-left: 3px;
+}
+
+.follow > .social_media > div{
+    padding: 3px 0px;
+}
+.follow > .social_media > div > a:hover{
+    color: var(--lavender_web2);
+}
+
+.link{
+    cursor: pointer;
+}
+
+.end{
+    align-self: center;
+    text-align: end;
+    font-size: 110%;
+}
+.end > div{
+    margin: 15px 0px;
+}
+.end > div *{
+    display: inline;
+}
+.end h2:hover{
+    color: var(--lavender_web2);
+}
+
+/*---------*/
+/*--phone--*/
+/*---------*/
+
+@media only screen and (max-width: 768px){
+    #slogan_footer{
+        display: none;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer >  .end{
+        text-align: start;
+        align-self: flex-start;
+
+        margin: 20px 0px 5px;
+    }
+    .footer >  .end > div{
+        margin: 10px 0px;
+    }
+}

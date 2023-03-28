@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/account.css">
+
+    <title>Omin</title>
+</head>
+<body>
+    <header id="header"></header>
+
+    <br><br><br><br>
+
+    <main>
+        <h1 id="title">Account management</h1>
+
+        <section id="name">
+            <div id="name_div">
+                <div class="f_name_div">
+                    <input type="text" name="f_name_inp" id="f_name_inp" disabled>
+                    <i class="fa-solid fa-lock f_name_lock lock"></i>
+                    <p class="f_name">Your first name</p>
+                </div>
+                    
+                <div class="l_name_div">
+                    <input type="text" name="l_name_inp" id="l_name_inp" disabled>
+                    <i class="fa-solid fa-lock l_name_lock lock"></i>
+                    <p class="l_name">Your last name</p>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section id="email_div">
+            <input type="text" name="email_inp" id="email_inp" disabled>
+            <i class="fa-solid fa-lock email_lock lock"></i>
+            <p class="email">Your email</p>
+        </section>
+
+        <br>
+
+        <section id="phone_div">
+            <input type="text" name="phone_inp" id="phone_inp" disabled>
+            <i class="fa-solid fa-lock phone_lock lock"></i>
+            <p class="phone">Your phone number</p>
+        </section>
+
+        <br>
+
+        <section id="address_div">
+            <textarea name="address" id="address_inp" cols="30" rows="5" disabled></textarea>
+            <i class="fa-solid fa-lock address_lock lock"></i>
+            <p class="address">Your address</p>
+        </section>
+
+        <br>
+
+        <div id="edit">
+            <h2 id="delate">Delate</h2>
+            <h2 id="edit_save"></h2>
+        </div>
+    </main>
+
+    <br><br><br><br>
+
+    <footer id="footer"></footer>
+</body>
+
+<script src="https://kit.fontawesome.com/c040d51f13.js" crossorigin="anonymous"></script>
+
+<script src="./scripts/account.js"></script>
+<script src="./scripts/header_footer/header.js"></script>
+<script src="./scripts/header_footer/footer.js"></script>
+
+</html>

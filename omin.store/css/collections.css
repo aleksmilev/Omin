@@ -1,0 +1,95 @@
+@import './default/reset.css';
+@import './default/fonts.css';
+@import './default/palette.css';
+
+
+@import './header_footer/header.css';
+@import './header_footer/footer.css';
+
+/*---------------*/
+/*--collections--*/
+/*---------------*/
+
+#collections{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1vw;
+    row-gap: 3vw;
+}
+
+.collection{
+    text-decoration: none;
+
+    margin-bottom: 3vw;
+}
+    
+.img_container{
+    position: relative;
+    overflow: hidden;
+
+    width: 20vw;
+}
+  
+.img_container img{
+    width: 100%;
+    -moz-transition:all .8s;-webkit-transition:all .8s;transition:all .8s;
+}
+.img_container:hover img{
+    max-height:100%;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);  
+}
+
+.collection_name{
+    font-size: 1.3vw;
+    font-family: 'Kanit';
+
+    text-align: center;
+    
+    color: var(--xiketic);
+}
+
+/*---------*/
+/*--pages--*/
+/*---------*/
+
+.control_pages{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 120%;
+    font-weight: normal;
+}
+.control_pages *{
+    margin: 0px 1px;
+}
+
+#page_count{
+    align-items: center;
+}
+
+#next_page , #previous_page{
+    cursor: pointer;
+}
+
+/*---------*/
+/*--phone--*/
+/*---------*/   
+
+@media only screen and (max-width: 768px){
+    #collections{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 4vw;
+        justify-content: center;
+    }
+
+    .img_container{
+        width: 28vh;
+        height: 37vh;
+    }
+
+    .collection_name{
+        font-size: 3.9vw;
+    }
+}
