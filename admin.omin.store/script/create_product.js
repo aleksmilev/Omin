@@ -57,7 +57,7 @@ form.addEventListener("submit", async (event) => {
 			formImage.append('id' , response);
 		
 			let xhr_img = new XMLHttpRequest();
-			xhr_img.open('POST', './server//images/products.php');
+			xhr_img.open('POST', 'omin.store/server//images/products.php');
 			xhr_img.onload = () => {
 				const response_img = JSON.parse(xhr_img.responseText);
 
