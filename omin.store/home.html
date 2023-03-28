@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+
+    <title>Omin</title>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <section class="title">
+            <img src="./images/title.webp" alt="">
+            <div class="title_inf">
+                <div class="slogan">
+                    <h1>Be creative</h1>
+                    <h1>be different</h1>
+                </div>
+                <a href="./shop?page=1&filter=none">Shop now</a>
+            </div>
+        </section>
+
+        <div class="main">
+            <section id="genders">
+                <div class="men" onclick="location.href='./shop?page=1&filter=man'">
+                    <div class="shape"><h1>Man's clothes</h1></div>
+                    
+                </div>
+                <div class="women" onclick="location.href='./shop?page=1&filter=woman'">
+                    <div class="shape"><h1>Woman's clothes</h1></div>
+                </div>
+            </section>
+    
+            <h2 class="title">Our coolest collections</h2>
+
+            <section id="collections">  
+
+                <!-- <a href="" class="collection">
+                    <div class="img_container">
+                        <img class="collection_img" src="./test_product/7041N-99X-002-1-558533_5.webp" alt="">
+                    </div>
+                    <p class="collection_name">Rick and Morty</p>
+                </a> -->
+    
+                <a href="./collections?page=1" class="collection">
+                    <div class="img_container">
+                        <img class="collection_img" src="./images/more_collections.webp" alt="">
+                    </div>
+                    <p class="collection_name">Other</p>
+                </a>
+            </section>
+
+            
+        </div>
+
+        <section id="custom_designs_main">
+            <div class="container">
+                <img src="./images/title_2.webp" alt="">
+                <div class="text_container">
+                    <h2 style="width: 80%;">Try make your own style</h2>
+                    <!-- <h2>Try make your own design</h2> -->
+                    <a href="./shop?page=1&filter=none">Go right now</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="main">
+
+            <section id="best_products">
+                <h2 class="title">Check out our best products</h2>
+
+                <div id = "inner_best_products">
+                    
+                    <!-- <a href="????????????" class="best_product">
+                        <div class="img_container">
+                            <img class="best_product_img" src="./test_product/7041N-99X-002-1-558533_5.webp" alt="">
+                        </div>
+                        <div class="best_product_name">
+                            <p class="name">Reality is poison</p>
+                            <p class="price">50лв.</p>
+                        </div>
+                    </a>  -->
+
+                </div>
+
+                <a href="./shop?page=1&filter=none"><div class="view_more"><p>view more</p></div></a>
+            </section>
+
+        </div>
+    </main>
+
+
+
+    <footer id="footer"></footer>
+</body>
+
+<script src="https://kit.fontawesome.com/c040d51f13.js" crossorigin="anonymous"></script>
+
+<script src="./scripts/home.js"></script>
+<script src="./scripts/header_footer/header.js"></script>
+<script src="./scripts/header_footer/footer.js"></script>
+
+</html>
