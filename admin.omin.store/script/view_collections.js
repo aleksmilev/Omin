@@ -9,7 +9,7 @@ class collection_{
         this.id = id;
         this.items = items;
 
-        this.image = `./server/images/collections/${id}.webp`;
+        this.image = `omin.store/server/images/collections/${id}.webp`;
 
         this.create_collection();
     }
