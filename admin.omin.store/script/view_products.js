@@ -17,7 +17,7 @@ class product_{
         this.gender = gender;
         this.collection = collection;
 
-        let img_url = "./server/images/products/" + id + "/";
+        let img_url = "omin.store/server/images/products/" + id + "/";
 
         this.first_img = img_url + "1.webp";
         this.second_img = img_url + "2.webp";
