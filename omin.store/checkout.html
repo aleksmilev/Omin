@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/checkout.css">
+
+    <title>Omin</title>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div id="progress_bar"></div>
+
+        <section id="cart">
+            <div id="main_cart">
+                
+                <!-- <div class="cart_item">
+                    <div class="item_info">
+                        <img src="./test_product/1.webp" alt="">
+                        <p class="name">test_product</p>
+                        <p class="price">100 BGN</p>
+                    </div>
+
+                    <div class="item_quantity">
+                        <i class="fa-solid fa-minus"></i>
+                        <p class="quantity_el">1</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="next">
+
+                <div id="total">
+                    <p>Your total order is </p>
+                    <p id="total_el"></p>
+                </div>
+
+                <p class="check_text">Please check that all of your current items are displayed.</p>
+
+                <button class="next_btn" id="to_stage_2">Progress to checkout</button>
+            </div>
+        </section>
+        
+        <section id="info">
+            <form id="form">
+                <div id="name_div">
+                    <div id="f_name_div">
+                        <input type="text" id="f_name" maxlength=10>
+                        <h1 id="f_name_h1">Your first name:</h1>
+                    </div>
+
+                    <div id="l_name_div">
+                        <input type="text" id="l_name" maxlength=10>
+                        <h1 id="l_name_h1">Your last name:</h1>
+                    </div>
+                </div>
+
+                <div id="phone_div">
+                    <input type="text" id="phone" maxlength=10>
+                    <h1 id="phone_h1">Your phone number:</h1>
+                </div>
+
+                <div id="address_div">
+                    <textarea id="address" id="" cols="30" rows="10"></textarea>
+                    <h1 id="address_h1">Your address:</h1>
+                </div>
+            </form>
+
+            <div class="next">
+                <p class="check_text">Please enter all your information correctly for the fastest delivery possible.</p>
+                <p class="check_text">Our employ will contact you for confirming your information.</p>
+
+                <button class="next_btn" id="to_stage_3">Progress to checkout</button>
+            </div>
+        </section>
+        
+        <section id="sended">
+            <h1>Your order has been successfully sent to our center and will be on its way in next couple days.</h1>
+            <p>Before sending the order, our employer will contact you to confirm your address.</p>
+            <p>Failure to confirm your information will result in the order being suspended.</p>
+            <p>If you would like to refund your order, please contact us directly or with our <a href="./info#contact_us">contact us form</a>.</p>
+            <button onclick="go_home()">Go back to home</button>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+
+<script src="https://kit.fontawesome.com/c040d51f13.js" crossorigin="anonymous"></script>
+
+<script src="./scripts/checkout.js"></script>
+<script src="./scripts/header_footer/header.js"></script>
+<script src="./scripts/header_footer/footer.js"></script>
+
+</html>
