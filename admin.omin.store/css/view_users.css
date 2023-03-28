@@ -1,0 +1,48 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+#users{
+    margin: 25px 15px;
+    margin-bottom: 50px;
+}
+#users > *{
+    margin: 25px 0px;
+}
+
+.user{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+    background-color: #363e7798;
+}
+
+.user *{
+    font-size: 115%;
+    font-family: 'Kanit';
+}
+
+.user_info{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.user_info > *{
+    display: flex;
+    gap: 5px;
+}
+
+.user > button{
+    justify-self: end;
+
+    margin-right: 10px;
+
+    font-size: 130%;
+}

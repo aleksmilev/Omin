@@ -1,0 +1,57 @@
+body{
+    height: 87vh;
+    background-color: #F0EDFDab;
+}
+
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--lavender_web);
+}
+
+#login{
+    background-color: #f5ecec;
+    box-shadow: 0px 0px 15px 20px #a091e4ba;
+
+    border-radius: 20px;
+    padding: 10vh 5vw;
+
+    font-size: 1.2vw;
+}
+
+#login > *{
+    margin-bottom: 30px;
+}
+#login > *:last-child{
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
+
+#login input{
+    all: unset;
+    
+    border-bottom: 1px solid black;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+#submit{
+    width: 100%;
+
+    padding: 5px 15px;
+
+    font-size: 1.4vw;
+}

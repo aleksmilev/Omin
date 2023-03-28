@@ -1,0 +1,56 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+body{
+    display: grid;
+}
+
+span{
+    color: var(--phthalo_blue);
+}
+
+#collections{
+    margin: 0px 15px;
+}
+#collections > *{
+    margin: 25px 0px;
+}
+
+.collection{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns:  auto 30% 30% 20%;
+
+    background-color: #363e7798;
+}
+
+.collection > *{
+    font-size: 130%;
+    font-family: 'Kanit';
+}
+
+.collection img{
+    height: 300px;
+
+    border-radius: 25px;
+}
+
+.collection > .info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.collection > .items{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    grid-template-rows: 30px;
+    align-items: start;
+}

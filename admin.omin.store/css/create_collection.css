@@ -1,0 +1,60 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+body{
+    height: 87vh;
+    overflow-y: hidden;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#new_collection{
+    border-radius: 20px;
+    padding: 10vh 5vw;
+
+    font-size: 1.2vw;
+}
+
+#new_collection > *{
+    margin-bottom: 30px;
+}
+#new_collection > *:last-child{
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
+
+#new_collection p{
+    text-align: center;
+}
+
+#new_collection input{
+    all: unset;
+    
+    border-bottom: 1px solid black;
+    padding: 3px;
+    margin-top: 5px;
+}
+#new_collection input[type=file]{
+    cursor: pointer;
+    max-width: 300px;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+#submit{
+    width: 270px;
+
+    padding: 5px 15px;
+
+    font-size: 1.4vw;
+}

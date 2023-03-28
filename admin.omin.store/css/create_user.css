@@ -1,0 +1,64 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+body{
+    height: 87vh;
+
+    overflow-y: hidden;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#new_user{
+    border-radius: 20px;
+    padding: 10vh 5vw;
+
+    font-size: 1.2vw;
+}
+
+#new_user > *{
+    margin-bottom: 30px;
+}
+#new_user > *:last-child{
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
+
+#new_user input{
+    all: unset;
+    
+    border-bottom: 1px solid black;
+    padding: 3px;
+    margin-top: 5px;
+}
+#new_user select{
+    all: unset;
+
+    width: 100%;
+
+    font-size: 1.2vw;
+
+    border-bottom: 1px solid black;
+    padding: 3px;
+    margin-top: 15px;
+}
+#permission_level{
+    width: 10vw;
+}
+
+#submit{
+    width: 270px;
+
+    padding: 5px 15px;
+
+    font-size: 1.4vw;
+}

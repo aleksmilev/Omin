@@ -1,0 +1,50 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+#feedbacks{
+    margin: 25px 15px;
+    margin-bottom: 50px;
+}
+#feedbacks > *{
+    margin: 25px 0px;
+}
+
+.feedback{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 33% 53% 14%;
+
+    background-color: #363e7798;
+}
+
+.feedback > .user_info,.feedback_info{
+    margin: 7px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.feedback *{
+    font-family: 'Kanit-bold';
+    font-size: 1.3vw;
+}
+
+.feedback > .user_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feedback > button{
+    height: 70px;
+    width: 10vw;
+
+    align-self: center;
+    justify-self: center;
+}

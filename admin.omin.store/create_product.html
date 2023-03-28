@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/create_product.css">
+    
+    <title>Omin</title>
+</head>
+<body>
+    <h1 id="page_title">Create new product</h1>
+
+    <form id="new_product" enctype="multipart/form-data">
+        <section id="product_name">
+            <p>Product name:</p>
+            <input type="text" name="product_name" id="prod_name" value="">
+        </section>
+
+        <section id="product_price">
+            <p>Product price:</p>
+            <input type="number" name="product_price" id="prod_price" value="">
+            <input type="text" value="BGN" disabled>
+        </section>
+
+        <section id="product_sizes">
+            <p>Product sizes:</p>
+            <div id="size_list">
+                <div class="checkbox">
+                    <input class="size_checkbox" type="checkbox" value="XXL">
+                    <p>XXL</p>
+                </div>
+                <div class="checkbox">
+                    <input class="size_checkbox" type="checkbox" value="XL">
+                    <p>XL</p>
+                </div>
+                <div class="checkbox">
+                    <input class="size_checkbox" type="checkbox" value="L">
+                    <p>L</p>
+                </div>
+                <div class="checkbox">
+                    <input class="size_checkbox" type="checkbox" value="M">
+                    <p>M</p>
+                </div>
+                <div class="checkbox">
+                    <input class="size_checkbox" type="checkbox" value="S">
+                    <p>S</p>
+                </div>
+                <div class="checkbox">
+                    <input class="size_checkbox" type="checkbox" value="XS">
+                    <p>XS</p>
+                </div>
+                <div class="checkbox">
+                    <input class="size_checkbox" type="checkbox" value="XXS">
+                    <p>XXS</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="product_gender">
+            <p>Product price:</p>
+            <select name="prod_gender" id="prod_gender">
+                <option value="N">Unisex</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </section>
+
+        <section id="product_collection">
+            <p>Product collection:</p>
+            <select name="prod_collection" id="prod_collection"></select>
+        </section>
+
+        <section id="product_first_image">
+            <p>Product first image:</p>
+            <input type="file" name="first_img" id="first_img" accept="image/webp">
+        </section>
+
+        <section id="product_second_image">
+            <p>Product second image:</p>
+            <input type="file" name="second_img" id="second_img" accept="image/webp">
+        </section>
+
+        <button type="submit" id="submit">Create new product</button>
+    </form>
+</body>
+<script src="./script/create_product.js"></script>
+</html>

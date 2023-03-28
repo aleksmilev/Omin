@@ -1,0 +1,59 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+body{
+    display: grid;
+}
+
+span{
+    color: var(--phthalo_blue);
+}
+
+#activities{
+    margin: 25px 15px;
+
+    min-height: 58vh;
+}
+#activities > *{
+    margin: 25px 0px;
+}
+
+.activity{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: auto 30%;
+
+    background-color: #363e7798;
+}
+
+.activity > *{
+    font-size: 130%;
+    font-family: 'Kanit';
+}
+.activity > *:first-child{
+    align-self: center;
+}
+.activity > *:last-child{
+    justify-self: end;
+
+    margin-right: 10px;
+
+    font-size: 130%;
+}
+
+#remove_all{
+    margin: 15px;
+    padding: 10px;
+
+    font-size: 130%;
+
+    align-self:center;
+
+    margin-bottom: 50px;
+}

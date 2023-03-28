@@ -1,0 +1,87 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+body{
+    height: 87vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#new_product{
+    border-radius: 20px;
+    padding: 10vh 5vw;
+
+    font-size: 1.2vw;
+}
+
+#new_product > *{
+    margin-bottom: 30px;
+}
+#new_product > *:last-child{
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
+
+#new_product p{
+    text-align: center;
+}
+
+#new_product input[type=text], #new_product input[type=number] , #new_product input[type=file],#new_product select{
+    all: unset;
+    
+    border-bottom: 1px solid black;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+#new_product select{
+    width: 100px;
+}
+
+#new_product input[disabled]{
+    width: 50px;
+    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#new_product input[type=file]{
+    cursor: pointer;
+    max-width: 300px;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+#size_list{
+    display: flex;
+    gap: 10px;
+}
+#size_list > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3px;
+}
+#size_list *{
+    text-align: center;
+}
+
+#submit{
+    width: 270px;
+
+    padding: 5px 15px;
+
+    font-size: 1.4vw;
+}

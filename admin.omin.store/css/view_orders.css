@@ -1,0 +1,67 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+#orders{
+    margin: 25px 15px;
+    margin-bottom: 50px;
+}
+#orders > *{
+    margin: 25px 0px;
+}
+
+.order{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 33% 53% 14%;
+
+    background-color: #363e7798;
+}
+
+.order > .user_info,.order_info{
+    margin: 7px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.order *{
+    font-family: 'Kanit-bold';
+    font-size: 1.3vw;
+}
+
+.order > .user_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.order > .order_info{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 64px;
+    align-items: start;
+}
+.order > .order_info > *{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    height: 30px;
+
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
+.order > button{
+    height: 70px;
+    width: 10vw;
+
+    align-self: center;
+    justify-self: center;
+}

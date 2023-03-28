@@ -1,0 +1,58 @@
+@import './default/fonts.css';
+@import './default/palette.css';
+@import './default/reset.css';
+
+@import './header/header.css';
+
+body{
+    display: grid;
+}
+
+span{
+    color: var(--phthalo_blue);
+}
+
+#products{
+    margin: 0px 15px;
+}
+#product > *{
+    margin: 25px 0px;
+}
+
+.product{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns:  15% 15% auto 20%;
+    gap: 30px;
+
+    background-color: #363e7798;
+}
+
+.product > *{
+    font-size: 130%;
+    font-family: 'Kanit';
+}
+
+.product img{
+    height: 300px;
+
+    border-radius: 25px;
+}
+
+.product > .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product > .items{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    grid-template-rows: 30px;
+    align-items: start;
+}
